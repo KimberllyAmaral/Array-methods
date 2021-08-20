@@ -9,7 +9,7 @@
 
 
 // map - interage com cada item do array e substitui cada item do array pelo resultado da intereção.
-// Lógica - Nesta função o map passa pelo array three com a função de parâmetro ITEM. Em seguida, ele retorna substituindo cada item do array pelo seu próprio resultado multiplicado por 2.
+// Lógica - Nesta função o map passa pelo array three. Em seguida, ele retorna substituindo cada item do array pelo seu próprio resultado multiplicado por 2.
 
 const three = [1, 2, 3];
 const doubled = three.map(function (item) {
@@ -17,8 +17,8 @@ const doubled = three.map(function (item) {
 });
 console.log(doubled);
 
-// filter - verifica da item do array com uma condição (true ou false), se a condição for verdadeira, o filter retorna o item dentro do array, se for falso ele não retorna o item no array.
-// Lógica - O array INTS é filtrado passando a função de parâmetro ITEM. O filter só vai retornar os itens que divididos por 2 tiverem tiverem o resto 0.
+// filter - verifica cada item do array com uma condição (true ou false), se a condição for verdadeira, o filter retorna o item dentro do array, se for falso ele não retorna o item no array.
+// Lógica - O array INTS é filtrado. O filter só vai retornar os itens que divididos por 2 tiverem o resto 0.
 
 const ints = [1, 2, 3];
 const evens = ints.filter(function (item) {
@@ -34,8 +34,8 @@ const sum = [1, 2, 3].reduce(function (result, item) {
 },0);
 console.log(sum);
 
-// some - verifica de algum item do array atende a condição. Se pelo menos algum dos itens atender, a condição será verdadeira. Se não, a condição é falsa.
-// Lógica - SOME retorna TRUE se algum dos números no array for negativo.
+// some - verifica se algum item do array atende a condição. Se pelo menos algum dos itens atender, a condição será verdadeira. Se não, a condição é falsa.
+// Lógica - SOME retorna TRUE se algum dos itens no array for negativo.
 const hasNegativeNumbers = [1, 2, 3, -1, 4].some(function (item) {
     return item < 0;
 })
